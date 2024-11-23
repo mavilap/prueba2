@@ -1,3 +1,61 @@
-body{
-    background-color: red;
+*{
+    padding: 3px;
+}
+.mainContainer {
+   /*background-color: cadetblue;*/
+   display: grid;
+   grid-template-areas: 
+    'HD HD HD'
+    'BR BR BR'
+    'LT PR PR'
+    'PI PI PI';
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  background-color:#432E54 ;
+  color: bisque;
+  padding: 20px;
+  grid-area: HD;
+}
+.barra {
+  background-color:#E8BCB9 ;
+  grid-column: BR;
+}
+.principal{
+    background-color:beige ;
+    grid-area: PR;
+}
+.lateral{
+    background-color:#4B4376 ;
+    grid-area: LT;
+}
+.piePagina{
+    display:flex;
+    flex-direction: row;
+    background-color:#E8BCB9 ;
+    grid-area: PI;
+}
+
+.centrado {
+    text-align: center;
+}
+
+/*Menu*/
+.menu-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-horizontal a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+    display: inline-block;
 }
